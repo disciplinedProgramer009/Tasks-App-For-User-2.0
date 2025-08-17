@@ -1,10 +1,9 @@
 import { Component, Output, EventEmitter, Input, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { TasksService } from '../tasks.service';
 
 @Component({
   selector: 'app-newtask',
-  imports: [FormsModule],
+  standalone: false,
   templateUrl: './newtask.html',
   styleUrl: './newtask.css'
 })
